@@ -1,0 +1,26 @@
+{
+	"type"          : "{{type}}",
+	"template"      : "{{template}}",
+	"pm"            : "{{pm}}",
+
+	"repo"          : {
+		"org"       : "{{org}}",
+		"name"      : "{{name}}",
+		"version"   : "{{version}}",
+		"desc"      : "{{desc}}",
+		"kw"        : "{{kw}}",
+		"license"   : "{{license}}",
+        "issues"    : "{{issues}}",
+        "homepage"  : "{{homepage}}",
+        "git_url"   : "{{git_url}}"
+	},
+
+	"author"        : {
+		"id"        : "{{author_id}}",
+		"name"      : "{{author_name}}",
+		"email"     : "{{author_email}}",
+		"url"       : "{{author_url}}"
+	},
+
+	"createdAt"     : "2025-11-28T21:21:57.552Z"
+}

@@ -1,0 +1,54 @@
+{
+	"name"                             : "{{tag}}",
+	"version"                          : "{{version}}",
+	"description"                      : "{{desc}}",
+	"keywords"                         : "{{kw}}",
+	"license"                          : "{{license}}",
+	"homepage"                         : "{{homepage}}",
+	"bugs"                             : {
+		"url"                          : "{{issues}}"
+	},
+	"author"                           : {
+		"name"                         : "{{author_name}}",
+		"email"                        : "{{author_email}}",
+		"url"                          : "{{author_url}}"
+	},
+	"repository"                       : {
+		"type"                         : "git",
+		"url"                          : "{{git_url}}"
+	},
+	"type"                             : "module",
+	"main"                             : "./dist/main.js",
+	"types"                            : "./dist/main.d.ts",
+	"files"                            : ["dist"],
+	"exports"                          : {
+		"."                            : {
+			"types"                    : "./dist/main.d.ts",
+			"import"                   : "./dist/main.js",
+			"require"                  : "./dist/main.js"
+		}
+	},
+	"scripts"                          : {},
+	"engines"                          : {
+		"bun"                          : ">=1.3.3"
+	},
+	"peerDependencies"                 : {
+		"bun"                          : "^1.3.3"
+	},
+	"dependencies"                     : {
+		"@je-es/client"                : "0.0.3",
+		"@je-es/server"                : "^0.1.0"
+	},
+	"devDependencies"                  : {
+		"@eslint/js"                   : "^9.39.1",
+		"@stylistic/eslint-plugin"     : "^5.6.1",
+		"@types/bun"                   : "^1.3.3",
+		"@types/node"                  : "^20.19.25",
+		"bun-plugin-dts"               : "^0.3.0",
+		"bun-types"                    : "^1.3.3",
+		"ts-node"                      : "^10.9.2",
+		"tsup"                         : "^8.5.1",
+		"typescript"                   : "^5.9.3",
+		"typescript-eslint"            : "^8.48.0"
+	}
+}

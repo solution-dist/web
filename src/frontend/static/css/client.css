@@ -1,0 +1,12 @@
+/* ╔════════════════════════════════════════ PACK ════════════════════════════════════════╗ */
+
+    @import url("./style/font.css");
+    @import url("./style/root.css");
+    @import url("./style/layout.css");
+    @import url("./style/nav.css");
+
+    @import url("./style/pages/HomePage.css");
+    @import url("./style/pages/TodoPage.css");
+
+/* ╚══════════════════════════════════════════════════════════════════════════════════════╝ */
+

@@ -1,0 +1,320 @@
+/* ╔════════════════════════════════════════ TODO PAGE ════════════════════════════════════════╗ */
+
+    /* Todo Page Container */
+    .todo-page {
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: stretch;
+    }
+
+    /* Todo Form Card */
+    .todo-form-card {
+        background: linear-gradient(135deg, var(--bg-color-secondary), var(--bg-color-tertiary));
+        border: var(--border-primary);
+        border-radius: var(--radius-xl);
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-lg);
+    }
+
+    /* Todo Form */
+    .todo-form {
+        display: flex;
+        gap: var(--spacing-md);
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+.todo-form .form-field {
+    width: 100%;
+}
+
+.todo-form .form-field * {
+    width: 100%;
+}
+
+    .todo-input-field input {
+        flex: 1;
+        padding: var(--spacing-md) var(--spacing-lg);
+        background-color: var(--bg-color-primary);
+        color: var(--text-color-primary);
+        border: 2px solid var(--border-color-primary);
+        border-radius: var(--radius-lg);
+        font-size: var(--font-size-base);
+        transition: all var(--transition-base);
+        outline: none;
+    }
+
+    .todo-input-field input:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .todo-input-field input::placeholder {
+        color: var(--text-color-quaternary);
+    }
+
+    /* Add Button */
+    .add-button {
+        padding: var(--spacing-md) var(--spacing-xl);
+        background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        color: white;
+        border: none;
+        border-radius: var(--radius-lg);
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-semibold);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        box-shadow: var(--shadow-md);
+        white-space: nowrap;
+    }
+
+    .add-button:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .add-button:active {
+        transform: translateY(0);
+    }
+
+    /* Stats Section */
+    .todos-stats {
+        display: flex;
+        gap: var(--spacing-lg);
+        justify-content: center;
+        padding: var(--spacing-md);
+        background-color: var(--bg-color-secondary);
+        border-radius: var(--spacing-md);
+        border: var(--border-primary);
+    }
+
+.filter-tabs {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    padding: var(--spacing-md);
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--spacing-md);
+    border: var(--border-primary);
+}
+
+.filter-tabs button {
+    padding: var(--spacing-md) var(--spacing-md);
+    background: var(--bg-color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-md);
+    white-space: nowrap;
+}
+
+button.filter-btn.active {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+        font-size: var(--font-size-sm);
+        color: var(--text-color-tertiary);
+    }
+
+    .stat strong {
+        font-size: var(--font-size-2xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-primary);
+    }
+
+    /* Todos Container */
+    .todos-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+
+    /* Todos Section */
+    .todos-section {
+        background-color: var(--bg-color-secondary);
+        border: var(--border-primary);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-md);
+    }
+
+    .section-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-semibold);
+        color: var(--text-color-primary);
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+        border-bottom: 2px solid var(--border-color-primary);
+    }
+
+    /* Todos List */
+    .todos-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    /* Individual Todo Item */
+    .todo-item {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md) var(--spacing-lg);
+        background-color: var(--bg-color-tertiary);
+        border: 2px solid transparent;
+        border-radius: var(--radius-md);
+        transition: all var(--transition-base);
+        cursor: pointer;
+    }
+
+    .todo-item:hover {
+        background-color: var(--bg-color-quaternary);
+        border-color: var(--color-primary);
+        transform: translateX(4px);
+    }
+
+    /* Todo Checkbox */
+    .todo-checkbox {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        accent-color: var(--color-primary);
+        transition: transform var(--transition-fast);
+    }
+
+    .todo-checkbox:hover {
+        transform: scale(1.1);
+    }
+
+    /* Todo Title */
+    .todo-title {
+        flex: 1;
+        font-size: var(--font-size-base);
+        color: var(--text-color-primary);
+        transition: all var(--transition-base);
+    }
+
+    .todo-item.completed .todo-title {
+        text-decoration: line-through;
+        color: var(--text-color-tertiary);
+        opacity: 0.6;
+    }
+
+    /* Delete Button */
+    .delete-button {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color: var(--text-color-tertiary);
+        border: 2px solid transparent;
+        border-radius: var(--radius-md);
+        font-size: var(--font-size-lg);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        opacity: 0;
+    }
+
+    .todo-item:hover .delete-button {
+        opacity: 1;
+    }
+
+    .delete-button:hover {
+        background-color: var(--color-danger);
+        color: white;
+        border-color: var(--color-danger);
+        transform: scale(1.1);
+    }
+
+    /* Completed Todo Item Styling */
+    .todo-item.completed {
+        opacity: 0.8;
+        background-color: var(--bg-color-secondary);
+    }
+
+    .todo-item.completed:hover {
+        opacity: 1;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .todo-form {
+            flex-direction: column;
+        }
+
+        .add-button {
+            width: 100%;
+        }
+
+        .todos-stats {
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .stat {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .todo-form-card,
+        .todos-section {
+            padding: var(--spacing-lg);
+        }
+
+        .todo-item {
+            padding: var(--spacing-sm) var(--spacing-md);
+        }
+
+        .delete-button {
+            opacity: 1;
+        }
+    }
+
+    /* Loading State */
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing-2xl);
+        color: var(--text-color-tertiary);
+        font-size: var(--font-size-lg);
+    }
+
+    .loading::after {
+        content: '';
+        margin-left: var(--spacing-md);
+        width: 20px;
+        height: 20px;
+        border: 3px solid var(--border-color-primary);
+        border-top-color: var(--color-primary);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+/* ╚══════════════════════════════════════════════════════════════════════════════════════╝ */
