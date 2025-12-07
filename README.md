@@ -26,80 +26,85 @@
 
 - ## 📚 Documentation Index
 
-    ### 🚀 Getting Started
-    - [Quick Start](#quick-start-) - Setup and run your first app
-    - [Project Structure](#structure) - Understanding the file organization
-    - [Built-in Features](#built-in-features) - Pre-configured systems ready to use
+    - ### 🚀 Getting Started
+      - [Quick Start](#quick-start-) - Setup and run your first app
+      - [Project Structure](#structure) - Understanding the file organization
+      - [Built-in Features](#built-in-features) - Pre-configured systems ready to use
 
-    ### 🎨 Frontend (@je-es/client)
+    - ### 🎨 Frontend (@je-es/client)
 
-    **Core Concepts**
-    - [Creating Pages](#creating-a-new-page) - Build new page components
-    - [Component Lifecycle](#component-lifecycle) - Understanding onMount, onUnmount, and hooks
-    - [State Management](#using-state-management-in-pages) - Reactive state with @state decorator
-    - [Reusable Components](#creating-reusable-components) - Build and mount child components
-    - [Smart Forms](#using-smartformcomponent) - Form validation and submission
+        - #### Core Concepts
+          - [Creating Pages](#creating-a-new-page) - Build new page components
+          - [Component Lifecycle](#component-lifecycle) - Understanding onMount, onUnmount, and hooks
+          - [State Management](#using-state-management-in-pages) - Reactive state with @state decorator
+          - [Reusable Components](#creating-reusable-components) - Build and mount child components
+          - [Smart Forms](#using-smartformcomponent) - Form validation and submission
 
-    **Routing & Navigation**
-    - [Route Configuration](#route-configuration) - Define app routes
-    - [Navigation Utilities](#using-navigation) - Programmatic navigation
+        - #### Routing & Navigation
+          - [Route Configuration](#route-configuration) - Define app routes
+          - [Navigation Utilities](#using-navigation) - Programmatic navigation
 
-    **UI Systems**
-    - [Toast Notifications](#using-toast-notifications) - Success/error/info/warning messages
-    - [Popup Dialogs](#using-popup-dialogs) - Confirm/alert/prompt dialogs
-    - [Loader Component](#using-the-loader) - Loading states and progress
-    - [Navbar System](#using-the-navbar) - Pre-built responsive navigation
+        - #### UI Systems
+          - [Toast Notifications](#using-toast-notifications) - Success/error/info/warning messages
+          - [Popup Dialogs](#using-popup-dialogs) - Confirm/alert/prompt dialogs
+          - [Loader Component](#using-the-loader) - Loading states and progress
+          - [Navbar System](#using-the-navbar) - Pre-built responsive navigation
 
-    **Styling & Theming**
-    - [Theme System](#using-the-theme-system) - Dark/Rose/Hacker themes
-    - [Component Styles](#component-styles) - CSS-in-JS with css template tag
-    - [CSS Variables](#css-variables-reference) - Theme-aware design tokens
+        - #### Styling & Theming
+          - [Theme System](#using-the-theme-system) - Dark/Rose/Hacker themes
+          - [Component Styles](#component-styles) - CSS-in-JS with css template tag
+          - [CSS Variables](#css-variables-reference) - Theme-aware design tokens
 
-    **Internationalization**
-    - [Translation System](#using-translations-i18n) - Multi-language support
-    - [Adding Translations](#adding-new-translations) - Extend language support
-    - [Translation Keys](#translation-key-reference) - Available translation keys
+        - #### Internationalization
+          - [Translation System](#using-translations-i18n) - Multi-language support
+          - [Adding Translations](#adding-new-translations) - Extend language support
+          - [Translation Keys](#translation-key-reference) - Available translation keys
 
-    ### ⚙️ Backend (@je-es/server)
+    - ### ⚙️ Backend (@je-es/server)
 
-    **API Development**
-    - [Creating API Routes](#adding-api-endpoints) - RESTful API endpoints
-    - [Request Context](#request-context-appcontext) - Accessing request data
-    - [Response Methods](#response-methods) - JSON, HTML, and error responses
-    - [Route Parameters](#route-parameters) - Dynamic URL parameters
+      - #### API Development
+        - [Creating API Routes](#adding-api-endpoints) - RESTful API endpoints
+        - [Request Context](#request-context-appcontext) - Accessing request data
+        - [Response Methods](#response-methods) - JSON, HTML, and error responses
+        - [Route Parameters](#route-parameters) - Dynamic URL parameters
 
-    **Database**
-    - [Schema Definition](#defining-database-schema) - Define tables and columns
-    - [Database Operations](#database-operations) - CRUD operations
-    - [Schema Functions](#schema-functions-reference) - Available column types and constraints
-    - [Relationships](#database-relationships) - Foreign keys and references
+      - #### Database
+        - [Schema Definition](#defining-database-schema) - Define tables and columns
+        - [Database Operations](#database-operations) - CRUD operations
+        - [Schema Functions](#schema-functions-reference) - Available column types and constraints
+        - [Relationships](#database-relationships) - Foreign keys and references
 
-    **Configuration**
-    - [Server Configuration](#server-configuration) - Port, hostname, timeouts
-    - [Security Settings](#security-configuration) - CORS, CSRF, rate limiting
-    - [Static Files](#static-file-serving) - Serving CSS, JS, images
-    - [Environment Variables](#environment-configuration) - .env file setup
+      - #### Configuration
+        - [Server Configuration](#server-configuration) - Port, hostname, timeouts
+        - [Security Settings](#security-configuration) - CORS, CSRF, rate limiting
+        - [Static Files](#static-file-serving) - Serving CSS, JS, images
+        - [Environment Variables](#environment-configuration) - .env file setup
 
-    **Advanced**
-    - [SSR Page Generation](#ssr-page-generation) - Server-side rendering
-    - [Error Handling](#error-handling-patterns) - Try-catch patterns
-    - [Middleware](#middleware-patterns) - Custom request processing
+      - #### Advanced
+        - [SSR Page Generation](#ssr-page-generation) - Server-side rendering
+        - [Error Handling](#error-handling-patterns) - Try-catch patterns
+        - [Middleware](#middleware-patterns) - Custom request processing
 
-    ### 📦 Reference
+    - ### 📦 Reference
 
-    **Component API**
-    - [Component Class](#component-class-reference) - Base component methods
-    - [createElement](#createelement-reference) - Virtual DOM creation
-    - [State Decorator](#state-decorator-reference) - Reactive state management
-    - [Memoization](#memoization-reference) - Performance optimization
+        - #### Component API
+          - [Component Class](#component-class-reference) - Base component methods
+          - [createElement](#createelement-reference) - Virtual DOM creation
+          - [State Decorator](#state-decorator-reference) - Reactive state management
+          - [Memoization](#memoization-reference) - Performance optimization
 
-    **Database API**
-    - [Database Methods](#database-methods-reference) - all(), findById(), insert(), update(), delete()
-    - [Query Patterns](#query-patterns) - Common database queries
+        - #### Database API
+          - [Database Methods](#database-methods-reference) - all(), findById(), insert(), update(), delete()
+          - [Query Patterns](#query-patterns) - Common database queries
 
-    **Utility Functions**
-    - [Translation (t)](#translation-function-reference) - t() function usage
-    - [Navigation](#navigation-utilities-reference) - navigate(), getCurrentPath(), isActivePath()
+        - #### Utility Functions
+          - [Translation (t)](#translation-function-reference) - t() function usage
+          - [Navigation](#navigation-utilities-reference) - navigate(), getCurrentPath(), isActivePath()
+
+    - ### Help
+
+        - #### UI issues
+          - [Icons not working](#icons-not-working)
 
     <br>
 
@@ -2513,6 +2518,28 @@
             const apiUrl = process.env.API_URL || 'http://localhost:3000';
             ```
 
+        <br>
+
+- ## Issues
+
+    - ### `gui`
+
+        - #### Icons not working
+
+            ```
+            # after run
+            > space init
+            > space install
+
+            # go to the `./node_modules/@fortawesome/fontawesome-free/webfonts/`
+            # copy all files
+
+            # go to `./src/frontend/static/css/fonts/icons/`
+            # delete all files
+            # paste the copied files
+
+            # that's it.
+            ```
         <br>
 
 <!-- ╚═════════════════════════════════════════════════════════════════╝ -->
