@@ -1,0 +1,53 @@
+// ╔════════════════════════════════════════ PACK ════════════════════════════════════════╗
+
+    // ═══════ BASE ═══════
+
+        @use './base/_root';
+        @use './base/_reset';
+        @use './base/_animations';
+        @use './base/_scrollbar';
+
+
+    // ═══════ LAYOUT ═══════
+
+        @use './layout/_container';
+        @use './layout/_nav';
+        @use './layout/_header';
+        @use './layout/_footer';
+        @use './layout/_loader';
+        @use './layout/_page';
+
+
+    // ═══════ COMPONENTS ═══════
+
+        @use './components/_dropdown';
+        @use './components/_button';
+        @use './components/_form';
+        @use './components/_card';
+        @use './components/_toast';
+        @use './components/_popup';
+
+
+    // ═══════ FLAG ═══════
+
+        @use "../../../../../node_modules/flag-icons/sass/flag-icons.scss" with (
+            // Override path to flags directory
+            $flag-icons-path: "../svg/flags",
+
+            // Include only specific country flags
+            $flag-icons-included-countries: ("us", "fr", "eg", "es")
+        );
+
+
+    // ═══════ ICON ═══════
+
+        $fa-font-path: "/css/fonts/icons/" !default;
+        @use "../../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+
+
+    // ═══════ PAGE ═══════
+
+        @use './pages/_todos';
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

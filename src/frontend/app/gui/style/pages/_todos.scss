@@ -1,0 +1,24 @@
+// ╔════════════════════════════════════════ PAGE ════════════════════════════════════════╗
+
+    .todo_page_filter_button {
+
+        i.fas {
+            font-size: var(--font-size-sm);
+        }
+
+        @media (max-width: 768px) {
+            gap: var(--spacing-md);
+            padding: var(--spacing-md) var(--spacing-sm);
+            font-size: var(--font-size-xs);
+
+            i.fas {
+                font-size: var(--font-size-xs);
+            }
+        }
+
+        @media (max-width: 480px) {
+            gap: var(--spacing-sm);
+        }
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

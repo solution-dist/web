@@ -55,6 +55,7 @@
                 <title>{{title}}</title>
 
                 <link rel="stylesheet" href="static/css/client.css">
+                <link rel="stylesheet" href="static/css/fonts/index.css">
             </head>
             <body id="app">
                 <script type="module" src="static/js/client.js"></script>

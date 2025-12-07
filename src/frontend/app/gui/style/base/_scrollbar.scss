@@ -1,0 +1,125 @@
+// ╔════════════════════════════════════════ ════ ════════════════════════════════════════╗
+
+    // ═══════ DEFAULT SCROLLBAR ═══════
+
+    // For Webkit browsers (Chrome, Safari, Edge)
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--bg-color-secondary);
+        border-radius: var(--radius-md);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--bg-color-quaternary);
+        border-radius: var(--radius-md);
+        border: 2px solid var(--bg-color-secondary);
+        transition: background var(--transition-fast);
+
+        &:hover {
+            background: var(--color-primary);
+        }
+
+        &:active {
+            background: var(--color-primary-hover);
+        }
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: var(--bg-color-secondary);
+    }
+
+    // For Firefox
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--bg-color-quaternary) var(--bg-color-secondary);
+    }
+
+
+    // ═══════ THIN SCROLLBAR VARIANT ═══════
+
+    .scrollbar-thin {
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--bg-color-quaternary);
+            border-radius: var(--radius-full);
+            border: none;
+
+            &:hover {
+                background: var(--color-primary);
+            }
+        }
+
+        scrollbar-width: thin;
+    }
+
+
+    // ═══════ HIDDEN SCROLLBAR VARIANT ═══════
+
+    .scrollbar-hidden {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+
+    // ═══════ HOVER SCROLLBAR (Only shows on hover) ═══════
+
+    .scrollbar-hover {
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: var(--bg-color-quaternary);
+
+            &:hover {
+                background: var(--color-primary);
+            }
+        }
+    }
+
+
+    // ═══════ CUSTOM COLORED SCROLLBAR ═══════
+
+    .scrollbar-primary {
+        &::-webkit-scrollbar-thumb {
+            background: var(--color-primary);
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        scrollbar-color: var(--color-primary) var(--bg-color-secondary);
+    }
+
+    .scrollbar-secondary {
+        &::-webkit-scrollbar-thumb {
+            background: var(--color-secondary);
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        scrollbar-color: var(--color-secondary) var(--bg-color-secondary);
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

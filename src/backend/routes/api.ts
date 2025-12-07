@@ -6,7 +6,7 @@
 
 // ╔════════════════════════════════════════ PACK ════════════════════════════════════════╗
 
-    import { RouteDefinition, type AppContext } from '@je-es/server';
+    import { RouteDefinition, SqlValue, type AppContext } from '@je-es/server';
 
 // ╚══════════════════════════════════════════════════════════════════════════════════════╝
 
@@ -21,7 +21,7 @@
             path: '/api/todos',
             handler: async (c: AppContext) => {
                 try {
-                    const allTodos = c.db.all('todos');
+                    const allTodos = c.db!.all('todos');
                     return c.json(allTodos, 200);
                 } catch (error: unknown) {
                     console.error('Error fetching todos:', error);
@@ -37,7 +37,7 @@
             handler: async (c: AppContext) => {
                 try {
                     const id = parseInt(c.params.id);
-                    const todo = c.db.findById('todos', id);
+                    const todo = c.db!.findById('todos', id);
 
                     if (!todo) {
                         return c.json({ error: 'Todo not found' }, 404);
@@ -64,7 +64,7 @@
                         return c.json({ error: 'Title is required' }, 400);
                     }
 
-                    const newTodo = c.db.insert('todos', {
+                    const newTodo = c.db!.insert('todos', {
                         title: title.trim(),
                         text: text || null,
                         completed: 0,
@@ -98,7 +98,7 @@
                         return c.json({ error: 'No fields to update' }, 400);
                     }
 
-                    const updatedTodo = c.db.update('todos', id, updateData);
+                    const updatedTodo = c.db!.update('todos', id, updateData as Record<string, SqlValue>);
 
                     if (!updatedTodo) {
                         return c.json({ error: 'Todo not found' }, 404);
@@ -120,7 +120,7 @@
                 try {
                     const id = parseInt(c.params.id);
 
-                    const deleted = c.db.delete('todos', id);
+                    const deleted = c.db!.delete('todos', id);
 
                     if (!deleted) {
                         return c.json({ error: 'Todo not found' }, 404);

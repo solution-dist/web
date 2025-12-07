@@ -1,0 +1,335 @@
+// ╔════════════════════════════════════════ ROOT ════════════════════════════════════════╗
+
+    // Base Theme Variables (Dark - Default)
+    :root {
+        // Brand Colors - More vibrant and modern
+        --color-primary: #d4a650;
+        --color-primary-hover: #c89838;
+        --color-secondary: #b8923f;
+        --color-secondary-hover: #9d7729;
+        --color-tertiary: #ddb468;
+        --color-quaternary: #e1bc72;
+        --color-accent: #efd19a;
+        --color-danger: #ef4444;
+        --color-success: #22c55e;
+        --color-warning: #f59e0b;
+
+        // Background Colors - Improved contrast
+        --bg-color-primary: #16161a;
+        --bg-nav-color-on-scroll: #16161aad;
+        --bg-color-secondary: #1f1f26;
+        --bg-color-tertiary: #27272f;
+        --bg-color-quaternary: #2f2f38;
+        --bg-color-hover: rgba(212, 166, 80, 0.1);
+        --bg-color-active: rgba(212, 166, 80, 0.15);
+        --on-bg-color: rgba(0, 0, 0, 0.4);
+
+        // Text Colors - Better readability
+        --text-color-primary: #f5f5f7;
+        --text-color-secondary: #e5e5e9;
+        --text-color-tertiary: #a0a0ab;
+        --text-color-quaternary: #72727e;
+        --text-color-muted: #52525d;
+
+        // Border Colors
+        --border-color-primary: #27272f;
+        --border-color-secondary: #2f2f38;
+        --border-color-tertiary: #3a3a44;
+        --border-color-quaternary: rgba(212, 166, 80, 0.2);
+
+        // Border Presets
+        --border-primary: 1px solid var(--border-color-primary);
+        --border-secondary: 1px solid var(--border-color-secondary);
+        --border-tertiary: 1px solid var(--border-color-tertiary);
+        --border-quaternary: 1px solid var(--border-color-quaternary);
+
+        // Spacing Scale
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-2xl: 3rem;
+
+        // Border Radius
+        --radius-sm: 0.25rem;
+        --radius-md: 0.5rem;
+        --radius-lg: 0.75rem;
+        --radius-xl: 1rem;
+        --radius-full: 9999px;
+
+        // Shadows - Enhanced
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -1px rgb(0 0 0 / 0.3);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -2px rgb(0 0 0 / 0.4);
+        --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6), 0 10px 10px -5px rgb(0 0 0 / 0.5);
+        --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.7);
+
+        // Typography
+        --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --font-family-mono: 'Courier New', monospace;
+
+        --font-size-xs: 0.75rem;
+        --font-size-sm: 0.875rem;
+        --font-size-base: 1rem;
+        --font-size-lg: 1.125rem;
+        --font-size-xl: 1.25rem;
+        --font-size-2xl: 1.5rem;
+        --font-size-3xl: 1.875rem;
+
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+
+        // Transitions
+        --transition-fast: 150ms ease-in-out;
+        --transition-base: 250ms ease-in-out;
+        --transition-slow: 350ms ease-in-out;
+
+        // Z-Index Scale
+        --z-dropdown: 1000;
+        --z-modal: 2000;
+        --z-popover: 3000;
+        --z-tooltip: 4000;
+
+        // Base Input/Button Height
+        --base-input-height: 40px;
+        --base-btn-height: 40px;
+
+        // mobile
+        @media (max-width: 768px) {
+            --base-input-height: 30px;
+            --base-btn-height: 30px;
+        }
+
+        --main-font: 'NotoNaskhArabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    // Rose Theme - More elegant and modern
+    [data-theme="rose"] {
+        --color-primary: #ec4899;
+        --color-primary-hover: #db2777;
+        --color-secondary: #f472b6;
+        --color-secondary-hover: #ec4899;
+        --color-tertiary: #db2777;
+        --color-quaternary: #be185d;
+        --color-accent: #fbbf24;
+
+        --bg-color-primary: #fff1f2;
+        --bg-color-secondary: #ffe4e6;
+        --bg-color-tertiary: #fecdd3;
+        --bg-color-quaternary: #fda4af;
+        --bg-color-hover: rgba(236, 72, 153, 0.1);
+        --bg-color-active: rgba(236, 72, 153, 0.15);
+        --on-bg-color: rgba(0, 0, 0, 0.1);
+
+        --text-color-primary: #881337;
+        --text-color-secondary: #9f1239;
+        --text-color-tertiary: #be123c;
+        --text-color-quaternary: #e11d48;
+        --text-color-muted: #f43f5e;
+
+        --border-color-primary: #fecdd3;
+        --border-color-secondary: #fda4af;
+        --border-color-tertiary: #fb7185;
+        --border-color-quaternary: #f43f5e;
+
+        --shadow-sm: 0 1px 2px 0 rgb(244 63 94 / 0.1);
+        --shadow-md: 0 4px 6px -1px rgb(244 63 94 / 0.15), 0 2px 4px -1px rgb(244 63 94 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(244 63 94 / 0.2), 0 4px 6px -2px rgb(244 63 94 / 0.1);
+        --shadow-xl: 0 20px 25px -5px rgb(244 63 94 / 0.25), 0 10px 10px -5px rgb(244 63 94 / 0.1);
+        --shadow-2xl: 0 25px 50px -12px rgb(244 63 94 / 0.35);
+    }
+
+    // Hacker Theme - Enhanced with better contrast
+    [data-theme="hacker"] {
+        --color-primary: #00ff00;
+        --color-primary-hover: #00cc00;
+        --color-secondary: #00cc00;
+        --color-secondary-hover: #009900;
+        --color-tertiary: #00ff66;
+        --color-quaternary: #66ff00;
+        --color-accent: #ffff00;
+        --color-danger: #ff0000;
+        --color-success: #00ff00;
+        --color-warning: #ffff00;
+
+        --bg-color-primary: #000000;
+        --bg-color-secondary: #0a0a0a;
+        --bg-color-tertiary: #141414;
+        --bg-color-quaternary: #1a1a1a;
+        --bg-color-hover: rgba(0, 255, 0, 0.1);
+        --bg-color-active: rgba(0, 255, 0, 0.15);
+        --on-bg-color: rgba(0, 0, 0, 0.8);
+
+        --text-color-primary: #00ff00;
+        --text-color-secondary: #00cc00;
+        --text-color-tertiary: #009900;
+        --text-color-quaternary: #006600;
+        --text-color-muted: #003300;
+
+        --border-color-primary: #003300;
+        --border-color-secondary: #006600;
+        --border-color-tertiary: #009900;
+        --border-color-quaternary: #00cc00;
+
+        --shadow-sm: 0 1px 2px 0 rgb(0 255 0 / 0.15), 0 0 5px rgb(0 255 0 / 0.1);
+        --shadow-md: 0 4px 6px -1px rgb(0 255 0 / 0.2), 0 0 10px rgb(0 255 0 / 0.15);
+        --shadow-lg: 0 10px 15px -3px rgb(0 255 0 / 0.25), 0 0 20px rgb(0 255 0 / 0.2);
+        --shadow-xl: 0 20px 25px -5px rgb(0 255 0 / 0.3), 0 0 30px rgb(0 255 0 / 0.25);
+        --shadow-2xl: 0 25px 50px -12px rgb(0 255 0 / 0.4), 0 0 40px rgb(0 255 0 / 0.3);
+
+        --font-family-primary: 'Courier New', monospace;
+    }
+
+// ╔════════════════════════════════════════ CARD MOBILE FIX ═════════════════════════════╗
+
+    @media (max-width: 768px) {
+        .__card__ {
+            padding: var(--spacing-md);
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+
+            &--tertiary {
+                max-width: 100%;
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+
+            &--secondary {
+                flex-wrap: wrap;
+                gap: var(--spacing-md);
+            }
+        }
+
+        .__card_container__ {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .__header__ {
+            padding-bottom: var(--spacing-md);
+            gap: var(--spacing-md);
+        }
+
+        .__title__ {
+            font-size: var(--font-size-2xl);
+            text-align: center;
+        }
+
+        .__desc__ {
+            font-size: var(--font-size-base);
+            text-align: center;
+        }
+
+        .__form__--linear {
+            flex-direction: column;
+            gap: var(--spacing-md);
+
+            .form-field {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        input,
+        textarea,
+        select,
+        .form-input {
+            width: 100%;
+            font-size: var(--font-size-base);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .__card__ {
+            padding: var(--spacing-sm);
+            border-radius: var(--radius-md);
+
+            &--compact {
+                padding: var(--spacing-md);
+            }
+        }
+
+        .__title__ {
+            font-size: var(--font-size-xl);
+        }
+
+        .__desc__ {
+            font-size: var(--font-size-sm);
+        }
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+
+
+// ╔════════════════════════════════════════ HTML ════════════════════════════════════════╗
+
+    // RTL/LTR Support
+    [dir="rtl"] {
+        --text-align    : right;
+        --float-start   : right;
+        --float-end     : left;
+    }
+    [dir="ltr"] {
+        --text-align    : left;
+        --float-start   : left;
+        --float-end     : right;
+    }
+
+    // Global Reset
+    * {
+        box-sizing      : border-box;
+        margin          : 0;
+        padding         : 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-color    : var(--bg-color-primary);
+        color               : var(--text-color-primary);
+        font-family         : var(--main-font);
+        font-size           : var(--font-size-base);
+        line-height         : 1.5;
+        transition          : background-color var(--transition-base), color var(--transition-base);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    #app {
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    // Smooth scrolling
+    html {
+        scroll-behavior: smooth;
+    }
+    ::selection {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+    ::-moz-selection {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

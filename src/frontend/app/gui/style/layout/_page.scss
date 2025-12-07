@@ -1,0 +1,23 @@
+// ╔════════════════════════════════════════ PAGE ════════════════════════════════════════╗
+
+    .__page__ {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+        min-height: 100%;
+
+        @media (max-width: 768px) {
+            gap: var(--spacing-md);
+            padding: 0;
+        }
+
+        @media (max-width: 480px) {
+            gap: var(--spacing-sm);
+        }
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

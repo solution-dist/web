@@ -7,7 +7,7 @@
 // ╔════════════════════════════════════════ PACK ════════════════════════════════════════╗
 
     import { client }  from '@je-es/client';
-    import { routes  } from './app/routes';
+    import { routes  } from './app/api/routes';
 
 // ╚══════════════════════════════════════════════════════════════════════════════════════╝
 
@@ -17,10 +17,14 @@
 
     export const clientApp = client({
         build: {
-            entry           : './src/frontend/app/browser.ts',
+            entry           : './src/frontend/app/core/browser.ts',
             output          : './src/frontend/static/js/client.js',
-            minify          : process.env.NODE_ENV === 'production',
-            sourcemap       : process.env.NODE_ENV === 'development',
+            minify          : true,
+            sourcemap       : true,
+            styles          : {
+                output      : './src/frontend/static/css/client.css',
+                input       : './src/frontend/app/gui/style/',
+            }
         },
 
         app: {

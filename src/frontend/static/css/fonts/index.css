@@ -1,0 +1,57 @@
+/* ╔════════════════════════════════════════ FONT ════════════════════════════════════════╗ */
+
+    /* Font Awesome Icons */
+    @font-face {
+        font-family: "Font Awesome 6 Brands";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url("./icons/fa-brands-400.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Font Awesome 6 Free";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url("./icons/fa-regular-400.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Font Awesome 6 Free";
+        font-style: normal;
+        font-weight: 900;
+        font-display: block;
+        src: url("./icons/fa-solid-900.woff2") format("woff2");
+    }
+
+    /* Arabic Font */
+    @font-face {
+        font-family: "NotoNaskhArabic";
+        src: url("./NotoNaskhArabic/NotoNaskhArabic.ttf");
+        unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+    }
+
+    /* Global Font Settings */
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Font Awesome Icon Classes - Override font-family for icons only */
+    .fa,
+    .fas,
+    .far,
+    .fal,
+    .fat,
+    .fab {
+        font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands' !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .fab {
+        font-family: 'Font Awesome 6 Brands' !important;
+    }
+
+/* ╚══════════════════════════════════════════════════════════════════════════════════════╝ */

@@ -1,0 +1,49 @@
+// ╔════════════════════════════════════════ ════ ════════════════════════════════════════╗
+
+    .__footer__ {
+        background-color: var(--bg-color-secondary);
+        border-top: var(--border-primary);
+        padding: var(--spacing-md) var(--spacing-lg);
+        text-align: center;
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        // mobile
+        @media (max-width: 768px) {
+            padding: var(--spacing-sm) var(--spacing-lg);
+        }
+
+        .__text__ {
+            color: var(--text-color-tertiary);
+            font-size: var(--font-size-sm);
+            margin: 0;
+
+            @media (max-width: 768px) {
+                font-size: var(--font-size-xs);
+            }
+        }
+
+        .__link__ {
+            color: var(--color-primary);
+            font-size: var(--font-size-sm);
+            text-decoration: none;
+            font-weight: var(--font-weight-bold);
+
+            @media (max-width: 768px) {
+                font-size: var(--font-size-xs);
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

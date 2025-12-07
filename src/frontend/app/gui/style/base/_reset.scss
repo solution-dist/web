@@ -1,0 +1,38 @@
+// ╔════════════════════════════════════════ RESET ═══════════════════════════════════════╗
+
+    * {
+        box-sizing          : border-box;
+        margin              : 0;
+        padding             : 0;
+        font-size           : var(--font-size-base);
+        font-family         : var(--main-font);
+        user-select         : text;
+        -webkit-user-drag   : none;
+        outline             : none;
+    }
+
+    html {
+        // overflow            : hidden;
+    }
+
+    body {
+        background-color    : var(--bg-color-primary);
+        color               : var(--text-color-primary);
+        font-family         : var(--font-family-primary);
+        font-size           : var(--font-size-base);
+        line-height         : 1.5;
+        transition          : background-color var(--transition-base), color var(--transition-base);
+        // overflow            : hidden;
+    }
+
+    [unset-height] {
+        height: unset;
+    }
+
+    [hide-on-mobile], .hide-on-mobile {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝

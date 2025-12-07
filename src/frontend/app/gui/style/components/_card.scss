@@ -1,0 +1,139 @@
+// ╔════════════════════════════════════════ ════ ════════════════════════════════════════╗
+
+    .__card_container__ {
+        display: flex ;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        gap: var(--spacing-md);
+
+        &--column {
+            flex-direction: column;
+            // overflow-y: auto;
+        }
+    }
+
+    .__card__ {
+        background-color: var(--bg-color-secondary);
+        border: var(--border-primary);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-md);
+        transition: transform var(--transition-base), box-shadow var(--transition-base);
+
+        &--hoverable:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        &--compact {
+            padding: var(--spacing-lg);
+            padding: var(--spacing-lg);
+            gap: var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            flex-wrap: nowrap;
+
+            .card-header {
+                display: flex ;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                .card-body {
+                    width: 100%;
+                    display: flex ;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .empty-state__icon {
+                        width: 75px;
+                        height: 75px;
+                        font-size: 50px;
+                        display: flex ;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                    }
+                    .empty-state__description {
+                        width: 100%;
+                        display: flex ;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                    }
+                }
+            }
+
+        }
+
+        &--spacious {
+            padding: var(--spacing-2xl);
+        }
+
+        &--secondary {
+            background-color: var(--bg-color-primary);
+            padding: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            gap: var(--spacing-xl);
+
+            // mobile
+            @media (max-width: 768px) {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+        }
+
+        &--tertiary {
+            background-color: var(--bg-color-tertiary);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            gap: var(--spacing-xl);
+            max-width: 90%;
+            margin: auto;
+            width: 100%;
+        }
+
+        // mobile
+        @media (max-width: 768px) {
+            padding: var(--spacing-sm) !important;
+            gap: var(--spacing-sm) !important;
+            justify-content: space-between;
+        }
+    }
+
+    .card-header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .card-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--text-color-primary);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .card-body {
+        color: var(--text-color-secondary);
+    }
+
+    .card-footer {
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+        border-top: var(--border-primary);
+    }
+
+// ╚══════════════════════════════════════════════════════════════════════════════════════╝
